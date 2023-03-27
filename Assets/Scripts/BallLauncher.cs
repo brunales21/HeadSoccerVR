@@ -11,7 +11,7 @@ public class BallLauncher : MonoBehaviour
     [SerializeField] Transform canonTransform;
     [SerializeField] Transform targetTransform;
     Vector3 aimOffset;
-    public int shootForce;
+    public float shootForce;
     public int shootDelay = 4;
     public float fallOffset;
     
@@ -22,12 +22,12 @@ public class BallLauncher : MonoBehaviour
 
     void Update()
     {
-
         botShooter();
     }
 
     public void shoot()
     {
+        shootForce = (float)(Vector3.Distance(initPos.position, targetTransform.position)*1.15);
         ball.transform.eulerAngles = canonTransform.eulerAngles;
 
         shootDirection = -ball.transform.up;
