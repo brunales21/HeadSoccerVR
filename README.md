@@ -1,3 +1,3 @@
 # HeadSoccerVR
-Check out this video about HeadSoccer VR.
+Check this out      
 https://www.youtube.com/watch?v=w5ggpHCxtds
